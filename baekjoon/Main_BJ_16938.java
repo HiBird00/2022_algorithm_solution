@@ -38,9 +38,7 @@ public class Main_BJ_16938 {
 				max = Math.max(max, ps[selected[i]]);
 				min = Math.min(min, ps[selected[i]]);
 				sum += ps[selected[i]];
-				System.out.print(ps[selected[i]] + " ");
 			}
-			System.out.println();
 			int diff = max-min;
 			if(sum >= L && sum <= R && diff >= X) answer++;
 			return;
