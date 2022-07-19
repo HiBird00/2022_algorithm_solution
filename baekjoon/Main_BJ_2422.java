@@ -34,7 +34,6 @@ public class Main_BJ_2422 {
 	
 	public static void solve(int idx, int cnt) {
 		if(cnt == 3) {
-			System.out.println(Arrays.toString(selected));
 			for(int i=0; i<3; i++) {
 				for(int j=i+1; j<3; j++) {
 					if(notMixed[selected[i]][selected[j]]) return;
