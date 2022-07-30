@@ -27,10 +27,11 @@ public class Main_BJ_15684 {
 		}
 		
 		solve(1,1,0);
-		System.out.println((answer > 3 || answer == Integer.MAX_VALUE) ? -1 : answer);
+		System.out.println(answer == Integer.MAX_VALUE ? -1 : answer);
 	}
 	
 	public static void solve(int r, int c, int cnt) {
+		if(cnt > 3) return;
 		boolean status = true;
 		for(int i=1; i<=N; i++) {
 			if(!check(i)) {
